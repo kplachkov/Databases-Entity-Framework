@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFirst", "CodeFirst\CodeFirst.csproj", "{765F7DEF-9F85-48F9-8AC9-BF900411C006}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firm", "CodeFirst\Firm.csproj", "{765F7DEF-9F85-48F9-8AC9-BF900411C006}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballManager", "FootballManager\FootballManager.csproj", "{AA37E271-693E-4FEA-B88E-29CAA96D7D4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{765F7DEF-9F85-48F9-8AC9-BF900411C006}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{765F7DEF-9F85-48F9-8AC9-BF900411C006}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{765F7DEF-9F85-48F9-8AC9-BF900411C006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA37E271-693E-4FEA-B88E-29CAA96D7D4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA37E271-693E-4FEA-B88E-29CAA96D7D4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA37E271-693E-4FEA-B88E-29CAA96D7D4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA37E271-693E-4FEA-B88E-29CAA96D7D4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

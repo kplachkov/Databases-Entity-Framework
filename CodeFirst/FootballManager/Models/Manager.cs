@@ -1,6 +1,6 @@
 ﻿namespace FootballManager.Models
 {
-    class Manager
+    public class Manager
     {
         public int ManagerId { get; set; }
 

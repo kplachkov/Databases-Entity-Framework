@@ -51,12 +51,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FMContext.cs" />
     <Compile Include="FootballManagerContext.cs" />
+    <Compile Include="Models\League.cs" />
+    <Compile Include="Models\Manager.cs" />
+    <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\Team.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
