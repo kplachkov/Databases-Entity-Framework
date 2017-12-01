@@ -12,6 +12,9 @@ namespace Data
             : base("name=MoviesContext")
         {
             Database.SetInitializer(new DropCreateDatabaseIfModelChanges<MoviesContext>());
+            //DropCreateDatabaseAlways - Drops the db every time when we execute the program.
+            // CreateDatabaseIfNotExists - Default migration
+            // MigrateDatabaseToLatestVersion - Uses our migrations
         }
         
         public virtual DbSet<Movie> Movies { get; set; }

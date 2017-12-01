@@ -2,6 +2,8 @@
 {
     using Data;
     using Models;
+    using System;
+    using System.Linq;
 
     class Startup
     {
@@ -10,21 +12,12 @@
             var context = new MoviesContext();
 
             context.Database.Initialize(true);
-            
-            context.Movies.Add(new Movie()
-            {
-                Title = "Titanic",
-                Genre = "Drama",
-                Rating = 7.5f,
-                ReleaseYear = 1996,
-                Director = new Director()
-                {
-                    FirstName = "James",
-                    LastName = "Cameron"
-                }
-            });
 
-            context.SaveChanges();
+            foreach (var director in context.Directors.ToList())
+            {
+                Console.WriteLine($"{director.FirstName} {director.LastName}");
+            }
+
         }
     }
 }
