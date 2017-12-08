@@ -50,6 +50,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InitializeAndSeed.cs" />
+    <Compile Include="Migrations\201712031222198_AddedMovieDuration.cs" />
+    <Compile Include="Migrations\201712031222198_AddedMovieDuration.Designer.cs">
+      <DependentUpon>201712031222198_AddedMovieDuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712031247454_RemovedDuration.cs" />
+    <Compile Include="Migrations\201712031247454_RemovedDuration.Designer.cs">
+      <DependentUpon>201712031247454_RemovedDuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712031251149_AddedDuration.cs" />
+    <Compile Include="Migrations\201712031251149_AddedDuration.Designer.cs">
+      <DependentUpon>201712031251149_AddedDuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712031345598_AddedStudioModel.cs" />
+    <Compile Include="Migrations\201712031345598_AddedStudioModel.Designer.cs">
+      <DependentUpon>201712031345598_AddedStudioModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MoviesContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -62,6 +79,20 @@
       <Project>{477f0449-8505-464f-bc20-8405372bb7c9}</Project>
       <Name>Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201712031222198_AddedMovieDuration.resx">
+      <DependentUpon>201712031222198_AddedMovieDuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712031247454_RemovedDuration.resx">
+      <DependentUpon>201712031247454_RemovedDuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712031251149_AddedDuration.resx">
+      <DependentUpon>201712031251149_AddedDuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712031345598_AddedStudioModel.resx">
+      <DependentUpon>201712031345598_AddedStudioModel.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

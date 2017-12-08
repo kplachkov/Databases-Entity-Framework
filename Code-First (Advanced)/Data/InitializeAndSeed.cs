@@ -15,6 +15,7 @@ namespace Data
         protected override void Seed(MoviesContext context)
         {
             // Add new movie to the DB.
+            /*
             context.Movies.Add(new Movie()
             {
                 Title = "Titanic",
@@ -30,6 +31,7 @@ namespace Data
             context.SaveChanges();
 
             base.Seed(context);
+            */
         }
     }
 }
